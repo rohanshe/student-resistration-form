@@ -1,0 +1,247 @@
+<html lang="eng">
+
+<head>
+    <title>student resistration form</title>
+</head>
+
+<body>
+    <style>
+        * {
+            text-transform: capitalize;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        input {
+            border: 1px solid aqua;
+
+
+        }
+
+        input:hover {
+            border: 2px solid lawngreen !important;
+        }
+
+        .table-con {
+            margin: auto;
+           box-shadow: 0 0 1px black,
+           0 0 2px black,
+           0 0 5px black;
+            border-radius: 25px;
+            width: 40rem;
+            height: 32rem;
+
+        }
+
+        td {
+            font-size: 18px;
+            padding-left: 20px !important;
+
+        }
+
+        h1 {
+            text-align: center;
+
+
+        }
+        #submit{
+            margin-top: 20px;
+            height: 27px;
+            width: 80px;
+            letter-spacing: 2px;
+            font-size: 15px;
+            border-radius: 5px;
+            border: 1px solid skyblue;
+            background-color: skyblue;
+        }
+        #submit:hover{
+            border: 1px solid white!important;
+            background-color: white;
+            color: black;
+            font-size: 18px;
+        }
+
+    </style>
+
+    <div class="table-con">
+
+        <h1>student resistration form</h1>
+        <table>
+
+            <!-- first name -->
+            <tr>
+                <td><label for="fname">First Name:</label></td>
+                <td> <input type="text" id=fname name="fname" maxlength="30"></td>
+            </tr>
+
+
+            <!-- last name  -->
+            <tr>
+                <td> <label for="lname">Last Name:</label></td>
+                <td> <input type="text" name="lname" id="lname" maxlength="30"></td>
+            </tr>
+
+
+
+            <!-- date of birth  -->
+            <tr>
+                <td> <label for="dob">date of birth:</label></td>
+                <td>
+                    <select name="date" id="dob">
+                        <option value="date">date:</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                        <option value="">15</option>
+                        <option value="">16</option>
+                        <option value="">17</option>
+                        <option value="">18</option>
+                        <option value="">19</option>
+                        <option value="">20</option>
+                        <option value="">21</option>
+                        <option value="">22</option>
+                        <option value="">23</option>
+                        <option value="">24</option>
+                        <option value="">25</option>
+                        <option value="">26</option>
+                        <option value="">27</option>
+                        <option value="">28</option>
+                        <option value="">29</option>
+                        <option value="">30</option>
+                        <option value="">31</option>
+                    </select>
+                    <select name="months" id="dob">
+                        <option value="months">months:</option>
+                        <option value="jan">jan</option>
+                        <option value="feb">feb</option>
+                        <option value="mar">mar</option>
+                        <option value="apr">apr</option>
+                        <option value="may">may</option>
+                        <option value="jun">jun</option>
+                        <option value="jul">jul</option>
+                        <option value="aug">aug</option>
+                        <option value="sub">sub</option>
+                        <option value="oct">oct</option>
+                        <option value="nov">nov</option>
+                        <option value="des">des</option>
+
+                    </select>
+                    <select name="years" id="dob">
+                        <option value="years">years:</option>
+                        <option value="">2015</option>
+                        <option value="">2014</option>
+                        <option value="">2013</option>
+                        <option value="">2012</option>
+                        <option value="">2011</option>
+                        <option value="">2010</option>
+                        <option value="">2009</option>
+                        <option value="">2008</option>
+                        <option value="">2007</option>
+                        <option value="">2006</option>
+                        <option value="">2005</option>
+                        <option value="">2004</option>
+                        <option value="">2003</option>
+                        <option value="">2002</option>
+                        <option value="">2001</option>
+                        <option value="">2000</option>
+                        <option value="">1999</option>
+                        <option value="">1998</option>
+                        <option value="">1997</option>
+                        <option value="">1996</option>
+                        <option value="">1995</option>
+                    </select>
+                </td>
+            </tr>
+
+
+            <!-- email id  -->
+            <tr>
+                <td> <label for="emailid">email id:</label></td>
+                <td>
+                    <input type="text" name="emailid" id="emailid" maxlength="100">
+
+                </td>
+            </tr>
+
+
+            <!-- password -->
+            <tr>
+                <td> <label for="password">password:</label>
+                </td>
+                <td><input type="password" name="password" id="password"></td>
+            </tr>
+            <!-- retype password -->
+            <tr>
+                <td><label for="repassword">re-type password:</label></td>
+                <td><input type="text" name="repassword" id="repassword"></td>
+            </tr>
+
+            <!-- gender -->
+            <tr>
+                <td> <label for="gender">gender:</label>
+                </td>
+                <td> <input type="radio" name="male" id="male" value="male">
+                    <label for="male">male</label>
+
+                    <input type="radio" name="female" id="female" value="female">
+                    <label for="female">female</label>
+                </td>
+            </tr>
+            <!-- address  -->
+            <tr>
+                <td><label for="address">address:</label></td>
+                <td><textarea name="address" id="address" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="city">city:</label></td>
+                <td><input type="text" id="city"></td>
+            </tr>
+            <tr>
+                <td><label for="pincode">pincode:</label></td>
+                <td><input type="text" id="pincode" maxlength="6"></td>
+            </tr>
+            <tr>
+                <td><label for="mobileno">mobile no:</label></td>
+                <td><input type="text" value="+91" size="3">
+                    <input type="text" name="mobileno" id="mobileno" maxlength="12">
+                </td>
+
+            </tr>
+            <tr>
+                <td><label for="course">course:</label></td>
+
+                <td><input type="text" list="course">
+                    <datalist id="course">
+                        <option value="BCA"></option>
+                        <option value="BCOM"></option>
+                        <option value="BSC"></option>
+                        <option value="BA"></option>
+                        <option value="BCOM-IT"></option>
+                        <option value="other"></option>
+
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="submit" id="submit"></td>
+            </tr>
+
+
+
+        </table>
+    </div>
+
+
+</body>
+
+</html>
